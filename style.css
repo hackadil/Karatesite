@@ -1,4 +1,12 @@
-/* RESET & BASE */
+/*
+ * ============================================
+  *PROJET : Club de Karaté - Cotonou
+  *VERSION : 1.0.0
+  *DATE : 2026
+  *DÉVELOPPEUR : [ARIORI 0.]
+  *CONTACT : [adariori3@gmail.com / 61873298]
+ * ============================================
+ */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +21,10 @@ body {
 }
 
 /* TYPOGRAPHIE */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -69,7 +80,7 @@ header nav {
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 header nav ul {
@@ -154,7 +165,7 @@ section {
     z-index: 1;
 }
 
-#hero > div {
+#hero>div {
     position: relative;
     z-index: 2;
     max-width: 800px;
@@ -166,7 +177,7 @@ section {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     letter-spacing: 3px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #hero header p {
@@ -175,7 +186,7 @@ section {
     font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 #hero a {
@@ -202,7 +213,7 @@ section {
     background: #f8f9fa;
 }
 
-#activites > div {
+#activites>div {
     display: flex;
     gap: 2rem;
     justify-content: center;
@@ -218,14 +229,14 @@ section {
     min-width: 250px;
     max-width: 350px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
 }
 
 #activites article:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 #activites article img {
@@ -254,7 +265,7 @@ section {
     background: white;
 }
 
-#apropos > div {
+#apropos>div {
     display: flex;
     gap: 3rem;
     justify-content: center;
@@ -263,7 +274,7 @@ section {
     margin: 0 auto;
 }
 
-#apropos > div > div {
+#apropos>div>div {
     flex: 1;
     min-width: 250px;
     text-align: center;
@@ -302,7 +313,7 @@ section {
     max-width: 600px;
     margin: 0 auto;
     padding: 2rem;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     margin-bottom: 2rem;
 }
@@ -318,8 +329,8 @@ section {
     border-radius: 15px;
     margin: 1rem auto;
     display: block;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    border: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 /* CONTACT SECTION */
@@ -384,13 +395,13 @@ section {
     margin: 0 auto;
 }
 
-.mentions-container > div {
+.mentions-container>div {
     flex: 1;
     min-width: 250px;
     background: white;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
 
@@ -422,7 +433,7 @@ section {
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
-    box-shadow: 0 -5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .cookie-banner.show {
@@ -483,52 +494,52 @@ footer a:hover {
     h1 {
         font-size: 2rem;
     }
-    
+
     h2 {
         font-size: 1.8rem;
     }
-    
+
     header nav {
         flex-direction: column;
         gap: 1rem;
         padding: 1rem;
     }
-    
+
     header nav ul {
         gap: 1.5rem;
     }
-    
+
     .logo-container img {
         height: 38px;
         width: 38px;
     }
-    
+
     .logo-container span {
         font-size: 1rem;
     }
-    
+
     #hero header h1 {
         font-size: 2.5rem;
     }
-    
+
     #activites article {
         min-width: 280px;
     }
-    
+
     #adresse iframe {
         height: 250px;
     }
-    
+
     section {
         padding: 3rem 5%;
     }
-    
+
     .cookie-banner {
         flex-direction: column;
         padding: 1rem;
     }
-    
-    .mentions-container > div {
+
+    .mentions-container>div {
         min-width: 100%;
     }
 }
@@ -537,37 +548,38 @@ footer a:hover {
     header nav ul {
         gap: 1rem;
     }
-    
+
     header nav ul li a {
         font-size: 0.9rem;
     }
-    
+
     .logo-container img {
         height: 32px;
         width: 32px;
     }
-    
+
     .logo-container span {
         font-size: 0.9rem;
     }
-    
+
     #hero header h1 {
         font-size: 2rem;
     }
-    
+
     #hero header p {
         font-size: 1rem;
     }
-    
-    #hero a, #contact a {
+
+    #hero a,
+    #contact a {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
     }
-    
+
     h2 {
         font-size: 1.5rem;
     }
-    
+
     #adresse iframe {
         height: 200px;
     }
