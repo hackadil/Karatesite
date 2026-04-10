@@ -140,7 +140,7 @@ section {
 
 /* HERO SECTION */
 #hero {
-    background: url('images/hero1.jpeg');
+    background: url('images/hero.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
