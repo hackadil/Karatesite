@@ -7,7 +7,8 @@
   *CONTACT : [adariori3@gmail.com / 61873298]
  * ============================================
  */
-* {
+
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,11 +21,7 @@ body {
     background-color: #fff;
 }
 
-/* TYPOGRAPHIE */
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -69,7 +66,6 @@ p {
     color: #666;
 }
 
-/* HEADER & NAVIGATION */
 header nav {
     display: flex;
     justify-content: space-between;
@@ -100,7 +96,6 @@ header nav ul li a:hover {
     color: #d32f2f;
 }
 
-/* LOGO STYLES */
 .logo-container {
     display: flex;
     align-items: center;
@@ -133,14 +128,12 @@ header nav ul li a:hover {
     color: #d32f2f;
 }
 
-/* SECTIONS COMMUNES */
 section {
     padding: 5rem 5%;
 }
 
-/* HERO SECTION */
 #hero {
-    background: url('images/hero.jpeg');
+    background: url('images/h.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -165,7 +158,7 @@ section {
     z-index: 1;
 }
 
-#hero>div {
+#hero > div {
     position: relative;
     z-index: 2;
     max-width: 800px;
@@ -208,12 +201,11 @@ section {
     transform: translateY(-3px);
 }
 
-/* ACTIVITES SECTION */
 #activites {
     background: #f8f9fa;
 }
 
-#activites>div {
+#activites > div {
     display: flex;
     gap: 2rem;
     justify-content: center;
@@ -260,27 +252,28 @@ section {
     font-size: 0.95rem;
 }
 
-/* APROPOS & HORAIRES */
 #apropos {
     background: white;
 }
 
-#apropos>div {
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1000px;
+#apropos > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-#apropos>div>div {
-    flex: 1;
-    min-width: 250px;
+#apropos > div > div {
     text-align: center;
     padding: 2rem;
     background: #f8f9fa;
     border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+#apropos > div > div:hover {
+    transform: translateY(-5px);
 }
 
 #apropos ul {
@@ -294,7 +287,66 @@ section {
     color: #666;
 }
 
-/* ADRESSE SECTION */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.team-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 220px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.team-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d32f2f;
+    margin-bottom: 1rem;
+}
+
+.team-card h4 {
+    color: #d32f2f;
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.team-card p {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.team-btn {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.team-btn:hover {
+    background: #1a1a1a;
+}
+
 #adresse {
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     color: white;
@@ -333,7 +385,6 @@ section {
     border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-/* CONTACT SECTION */
 #contact {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/bg-texture.png');
     background-size: cover;
@@ -380,7 +431,6 @@ section {
     margin-top: 1rem;
 }
 
-/* MENTIONS LEGALES */
 #mentions {
     background: #f8f9fa;
     padding: 4rem 5%;
@@ -395,7 +445,7 @@ section {
     margin: 0 auto;
 }
 
-.mentions-container>div {
+.mentions-container > div {
     flex: 1;
     min-width: 250px;
     background: white;
@@ -415,7 +465,40 @@ section {
     line-height: 1.6;
 }
 
-/* COOKIE BANNER */
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p {
+    color: #aaa;
+    margin-bottom: 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline !important;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.social-links a {
+    color: #d32f2f;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
 .cookie-banner {
     position: fixed;
     bottom: 0;
@@ -472,24 +555,55 @@ section {
     color: white;
 }
 
-/* FOOTER */
-footer {
-    background: #1a1a1a;
-    color: white;
-    text-align: center;
+.modal-sensei {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-sensei-content {
+    background: white;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 20px;
     padding: 2rem;
+    position: relative;
+    text-align: center;
+    animation: modalFadeIn 0.3s ease;
 }
 
-footer p {
-    color: #aaa;
-    margin-bottom: 0.5rem;
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
-footer a:hover {
-    text-decoration: underline !important;
+.close-sensei {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #666;
+    transition: 0.3s;
 }
 
-/* RESPONSIVE DESIGN */
+.close-sensei:hover {
+    color: #d32f2f;
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -539,8 +653,23 @@ footer a:hover {
         padding: 1rem;
     }
 
-    .mentions-container>div {
+    .mentions-container > div {
         min-width: 100%;
+    }
+
+    #apropos > div {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .team-card {
+        width: 180px;
+        padding: 1rem;
+    }
+
+    .team-card img {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -582,5 +711,151 @@ footer a:hover {
 
     #adresse iframe {
         height: 200px;
+    }
+
+    .team-container {
+        gap: 1rem;
+    }
+
+    .team-card {
+        width: 160px;
+        padding: 0.8rem;
+    }
+
+    .team-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .team-card h4 {
+        font-size: 0.9rem;
+    }
+
+    .team-btn {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.7rem;
+    }
+}
+
+
+.gallery-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-modal-content {
+    max-width: 1000px;
+    width: 90%;
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+.gallery-close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery-close:hover {
+    color: #d32f2f;
+}
+
+#galleryTitle {
+    color: white;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#galleryImage {
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.gallery-prev, .gallery-next {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery-prev:hover, .gallery-next:hover {
+    background: white;
+    color: #d32f2f;
+    transform: scale(1.1);
+}
+
+.gallery-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.gallery-thumbnails img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.gallery-thumbnails img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-thumbnails img.active {
+    border-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .gallery-prev, .gallery-next {
+        font-size: 1rem;
+        padding: 0.3rem 0.8rem;
+    }
+    
+    .gallery-thumbnails img {
+        width: 60px;
+        height: 45px;
+    }
+    
+    #galleryImage {
+        max-height: 300px;
+    }
+    
+    .gallery-modal-content {
+        padding: 1rem;
     }
 }

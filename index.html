@@ -39,7 +39,9 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
 
     <title>Club de Karaté - Cotonou | Cours enfants & adultes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="style.css">
+
 
     <!-- Données structurées JSON-LD -->
     <script type="application/ld+json">
@@ -66,7 +68,7 @@
         <nav>
             <div class="logo-container">
                 <img src="images/logo.jpeg" alt="Logo Club de Karaté">
-                <span>Karaté<span class="karate">Club</span></span>
+                <span>Fighting Spirit<span class="karate"> Karate Club</span></span>
             </div>
             <ul>
                 <li><a href="#hero">Accueil</a></li>
@@ -98,20 +100,17 @@
             <h2>Nos activités</h2>
             <div>
                 <article>
-                    <img src="images/enfants.png" alt="Cours de karaté pour enfants">
-                    <h4>Cours enfants</h4>
-                    <p>Apprentissage du karaté dès le plus jeune âge</p>
+                    <img src="images/e.jpg" alt="Cours de karaté pour enfants">
+                    <h4>Entraînement adulte et enfants</h4>
+                    <p>Cours pour enfants et adultes. Apprentissage du karaté Shotokan, perfectionnement technique et
+                        physique.</p>
                 </article>
                 <article>
-                    <img src="images/adultes.png" alt="Entraînement karaté adultes">
-                    <h4>Entraînement adultes</h4>
-                    <p>Perfectionnement technique et physique</p>
-                </article>
-                <article>
-                    <img src="images/competition.png" alt="Compétition karaté">
+                    <img src="images/az.jpg" alt="Compétition karaté">
                     <h4>Stages & Compétitions</h4>
                     <p>Participation aux événements et tournois</p>
                 </article>
+
             </div>
         </section>
         <!-- fin activite sect -->
@@ -121,11 +120,27 @@
             <h2>À propos & Horaires</h2>
             <div>
                 <div>
-                    <h3>À propos de nous</h3>
-                    <p>Notre club forme enfants et adultes au karaté Shotokan avec discipline et rigueur.</p>
+                    <h3>👨‍🏫 Sensei</h3>
+                    <div class="team-container">
+                        <div class="team-card" onclick="openSensei('jean')">
+                            <img src="images/galerie/sensei.jpg" alt="Maître Aballlo">
+                            <h4>Maître Aballo</h4>
+                            <p>Ceinture Noire 5e Dan</p>
+                        </div>
+                    </div>
                 </div>
                 <div>
-                    <h3>Horaires</h3>
+                    <h3>🥋 Notre philosophie</h3>
+                    <p>Discipline, respect, persévérance et humilité sont les valeurs que nous transmettons à chaque
+                        cours.</p>
+                </div>
+                <div>
+                    <h3>💰 Tarifs</h3>
+                    <p>Inscription trimestrielle : 50 000 FCFA<br>
+                        Tenue (kimono) : 5 000 FCFA</p>
+                </div>
+                <div>
+                    <h3>⏰ Horaires</h3>
                     <ul>
                         <li>Mercredi : 16h00 - 18h00</li>
                         <li>Samedi : 16h00 - 18h00</li>
@@ -197,6 +212,9 @@
 
     <footer>
         <p>© 2026 Club de Karaté - Cotonou | Tous droits réservés</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/groups/221923285647810/"><i class="fa fa-facebook"></i></a>
+        </div>
         <p>Contact : +229 96 99 55 58</p>
         <p><a href="#mentions" style="color: #d32f2f; text-decoration: none;">Mentions légales</a> |
             <a href="#" id="openCookies" style="color: #d32f2f; text-decoration: none;">Gestion des cookies</a>
@@ -249,6 +267,21 @@
             });
         });
     </script>
+
+    <div id="galleryModal" class="gallery-modal">
+        <div class="gallery-modal-content">
+            <span class="gallery-close">&times;</span>
+            <h3 id="galleryTitle"></h3>
+            <div class="gallery-container">
+                <button class="gallery-prev">◀️</button>
+                <img id="galleryImage" src="" alt="Photo galerie">
+                <button class="gallery-next">▶️</button>
+            </div>
+            <div class="gallery-thumbnails" id="galleryThumbnails"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
