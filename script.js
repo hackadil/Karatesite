@@ -6,7 +6,8 @@ const galerie = {
             "images/galerie/cours/2.jpg",
             "images/galerie/cours/3.jpg",
             "images/galerie/cours/4.jpg",
-            "images/galerie/cours/5.jpg"
+            "images/galerie/cours/5.jpg",
+            "images/galerie/cours/6.jpg"
         ]
     },
     competitions: {
@@ -15,7 +16,9 @@ const galerie = {
             "images/galerie/competition/1.jpg",
             "images/galerie/competition/2.jpg",
             "images/galerie/competition/3.jpg",
-            "images/galerie/competition/4.jpg"
+            "images/galerie/competition/4.jpg",
+            "images/galerie/competition/5.jpg",
+            "images/galerie/competition/6.jpg"
         ]
     }
 }
