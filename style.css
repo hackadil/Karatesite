@@ -133,7 +133,7 @@ section {
 }
 
 #hero {
-    background: url('images/h.jpg');
+    background: url('images/h.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
