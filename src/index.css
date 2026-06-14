@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, sans-serif;
+  --font-display: "Cinzel", "Cormorant Garamond", serif;
+  --font-serif: "Cormorant Garamond", serif;
+  
+  --color-brand-red: #C5A059;
+  --color-brand-red-hover: #D4B270;
+  --color-brand-dark: #0A0A0A;
+  --color-brand-card: #121212;
+  --color-brand-gray: #1C1C1C;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-gray);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-red);
+}
+
+/* Custom utilities */
+html {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-dark);
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.05em;
+}
+
+/* Traditional elegance visual classes */
+.japanese-grid {
+  background-image: 
+    linear-gradient(to right, rgba(197, 160, 89, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(197, 160, 89, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.95;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s infinite ease-in-out;
+}
+
+/* Custom interactive card focus styling */
+.premium-border-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.premium-border-hover:hover {
+  border-color: rgba(197, 160, 89, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(197, 160, 89, 0.15);
+}

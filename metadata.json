@@ -1,0 +1,6 @@
+{
+  "name": "Fighting Spirit Karate Club",
+  "description": "Association sportive de Karaté Shotokan à Cotonou, Bénin. Cours de karaté pour enfants et adultes sous la direction de Maître Aballo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
