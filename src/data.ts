@@ -92,8 +92,8 @@ export const RATES: RateItem[] = [
     id: "kimono",
     name: "Tenue officielle (Kimono)",
     price: 5000,
-    description: "Kimono de karaté classique (Dogi) adapté pour les cours et les passages de grades.",
-    required: false
+    description: "Le port du kimono officiel (Karategi) blanc est obligatoire pour participer aux cours et aux passages de grades.",
+    required: true
   }
 ];
 
